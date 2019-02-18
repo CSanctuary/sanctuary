@@ -202,7 +202,7 @@ button:active {
 @media (min-width: 800px) {
 
   body {
-    background: #ccc url('https://raw.githubusercontent.com/Chopper888/sanctuary/master/img%7Cvid%7Cdoc/Free%20Digital%20Texture%2026_12_2010%20002.jpg') no-repeat right top fixed;
+    background: #ccc url('img%7Cvid%7Cdoc/Free%20Digital%20Texture%2026_12_2010%20002.jpg') no-repeat right top fixed;
     background-color: rgba(255, 255, 255, 0.50);
     background-blend-mode: color;
     background-size: cover;

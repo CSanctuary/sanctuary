@@ -202,7 +202,7 @@ button:active {
 @media (min-width: 800px) {
 
   body {
-    background: #ccc url('http://images.fanpop.com/images/image_uploads/Bridge-of-Death-monty-python-and-the-holy-grail-591679_800_441.jpg') no-repeat right top fixed;
+    background: #ccc url('http://www.texturemate.com/sites/default/files/textures/Create%20Texture/2018-03/Free%20Digital%20Texture%2026_12_2010%20002.jpg') no-repeat right top fixed;
     background-color: rgba(255, 255, 255, 0.50);
     background-blend-mode: color;
     background-size: cover;
@@ -248,4 +248,5 @@ button:active {
   }
 
 }
+
 

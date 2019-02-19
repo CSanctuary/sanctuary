@@ -202,13 +202,13 @@ button:active {
 @media (min-width: 800px) {
 
  #bg_top {
-	width: 1080px;
-	height: 1080px;
+	width: 3200px;
+	height: 3200px;
 	position: fixed;
 	background-repeat: no-repeat;
 	top: 0px;
 	left: 0px;
-	background-image: url('https://wallpapertag.com/wallpaper/full/8/0/7/121002-red-background-hd-1920x1200-for-android-40.jpg');
+	background-image: url('https://raw.githubusercontent.com/CSanctuary/sanctuary/master/img%7Cvid%7Cdoc/ancientantiquearchitech.jpg');
 	z-index: -1;
 }
 

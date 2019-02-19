@@ -202,13 +202,13 @@ button:active {
 @media (min-width: 800px) {
 
  #bg_top {
-	width: 2000x;
-	height: 2000px;
+	width: 1080x;
+	height: 1080px;
 	position: fixed;
 	background-repeat: no-repeat;
 	top: 0px;
 	left: 0px;
-	background-image: url('https://raw.githubusercontent.com/CSanctuary/sanctuary/master/img%7Cvid%7Cdoc/ancientantiquearchitech.jpg');
+	background-image: url('https://raw.githubusercontent.com/CSanctuary/sanctuary/master/img%7Cvid%7Cdoc/redtexture.jpg');
 	z-index: -1;
 }
 

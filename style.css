@@ -202,8 +202,8 @@ button:active {
 @media (min-width: 800px) {
 
  #bg_top {
-	width: 3200px;
-	height: 3200px;
+	width: 2000x;
+	height: 2000px;
 	position: fixed;
 	background-repeat: no-repeat;
 	top: 0px;

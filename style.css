@@ -208,7 +208,7 @@ button:active {
 	background-repeat: no-repeat;
 	top: 0px;
 	left: 0px;
-	background-image: url('redtexture.jpg');
+	background-image: url('https://raw.githubusercontent.com/CSanctuary/sanctuary/master/img%7Cvid%7Cdoc/redtexture.jpg');
 	z-index: -1;
 }
 

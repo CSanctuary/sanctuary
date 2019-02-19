@@ -201,6 +201,16 @@ button:active {
 
 @media (min-width: 800px) {
 
+#bg_top {
+	width: 1750px;
+	height: 1750px;
+	position: fixed;
+	background-repeat: no-repeat;
+	top: 0px;
+	left: 0px;
+	background-image: url('https://raw.githubusercontent.com/CSanctuary/sanctuary/master/img%7Cvid%7Cdoc/redtexture.jpg');
+	z-index: -1;
+}
 
 
   h1 {

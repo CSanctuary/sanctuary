@@ -5,15 +5,38 @@ body {
   padding: 0;
 }
 
-a:active,
-a:visited,
-a:link {
-  text-decoration: none;
-  color: #00f;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#000;
 }
-a:hover {
-  color: #000;
+
+li {
+	float: left;
 }
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none;
+}
+
+.logo {
+	float: both;
+	padding: 10px 0;
+}
+
+li a:hover:not(.active) {
+	background-color: #b30000;
+}
+
+.active {
+	background-color: #b30000;
+}​
 
 div {
   box-sizing: border-box;
@@ -253,4 +276,3 @@ button:active {
   }
 
 }
-

@@ -253,41 +253,4 @@ button:active {
   }
 
 }
-  body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #f53b00;
-}
-
-li {
-	float: left;
-}
-
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-.logo {
-	float: both;
-	padding: 10px 0;
-}
-
-li a:hover:not(.active) {
-	background-color: #000FDB;
-}
-
-.active {
-	background-color: #000FDB;
-}
 

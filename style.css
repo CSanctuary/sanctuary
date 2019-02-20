@@ -253,5 +253,15 @@ button:active {
   }
 
 }
+       <nav>
+            <ul>
+                <li><a href="https://queuedhub.com/index.html">Vaping</a></li>
+                <li><a href="https://queuedhub.com/shop.html">Shop</a></li>
+                <li><a href="https://queuedhub.com/technology.html">Technology</a></li>
+                <li><a href="https://queuedhub.com/socialmedia.html">Socialmedia</a></li>
+                <li style="float:right"><a class="active" href="#https://queuedhub.com/donate.html">Donate</a></li>
+                <li style="float:right"><a class="active" href="https://queuedhub.com/contact.html">Contact</a></li>
+            </ul>
+       </nav>
 
 

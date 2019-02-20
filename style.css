@@ -253,15 +253,41 @@ button:active {
   }
 
 }
-       <nav>
-            <ul>
-                <li><a href="https://queuedhub.com/index.html">Vaping</a></li>
-                <li><a href="https://queuedhub.com/shop.html">Shop</a></li>
-                <li><a href="https://queuedhub.com/technology.html">Technology</a></li>
-                <li><a href="https://queuedhub.com/socialmedia.html">Socialmedia</a></li>
-                <li style="float:right"><a class="active" href="#https://queuedhub.com/donate.html">Donate</a></li>
-                <li style="float:right"><a class="active" href="https://queuedhub.com/contact.html">Contact</a></li>
-            </ul>
-       </nav>
+  body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f53b00;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.logo {
+	float: both;
+	padding: 10px 0;
+}
+
+li a:hover:not(.active) {
+	background-color: #000FDB;
+}
+
+.active {
+	background-color: #000FDB;
+}
 

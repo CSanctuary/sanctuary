@@ -1,3 +1,4 @@
-document.getElementById("submit").addEventListener("click", function( event ) {
-  document.getElementById("survey-form").classList.add("submitted");
-});
+ function placeOrder(){
+        document.theForm.action="yourUrl";
+        document.theForm.submit();
+        }

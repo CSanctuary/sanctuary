@@ -445,7 +445,7 @@ $TARGET_EMAIL = array($EMAIL_NAME . "googol.msg@gmail\.com$");
 $DEF_ALERT = "googol.msg@gmail.com";
 
 /* Help: http://www.tectite.com/fmdoc/site_domain.php */
-$SITE_DOMAIN = "https://csanctuary.github.io/sanctuary"; /* your website domain name */
+$SITE_DOMAIN = "http://sanctuarynetwork.online"; /* your website domain name */
 
 /* Help: http://www.tectite.com/fmdoc/set_real_document_root.php */
 $SET_REAL_DOCUMENT_ROOT = "https://github.com/CSanctuary/sanctuary"; /* overrides the value set by SetRealDocumentRoot function */

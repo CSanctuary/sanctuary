@@ -124,8 +124,14 @@ body {
      position: relative;
      margin: .5em 0 2em;
 }
+
+@font-face {
+    font-family: DeliciousRoman;
+    src: url('http://www.font-face.com/fonts/delicious/Delicious-Roman.otf');
+}
+
      .dropdown .dropdown-options::after {
-     font-family: FontAwesome;
+     font-family: FontAwesome\ 5 Free';
      content: "\f085";
      color: #999;
      font-size: 1.3em;
@@ -139,7 +145,7 @@ body {
      border-left: 1px solid #eee;
 }
  label.field {
-     font-weight: 700;
+     font-weight: 900;
      display: block;
      margin-top: .75em;
 }

@@ -125,22 +125,8 @@ body {
      margin: .5em 0 2em;
 }
 
-        @font-face {
-        font-family: DeliciousRoman;
-        font-weight: 900;
-        font-display: $fa-font-display;
-   	src: url('#{$fa-font-path}/fa-regular-400.eot');
-	src: url('#{$fa-font-path}/fa-regular-400.eot?#iefix') format('embedded-opentype'),
-	url('#{$fa-font-path}/fa-regular-400.woff2') format('woff2'),
-	url('#{$fa-font-path}/fa-regular-400.woff') format('woff'),
-	url('#{$fa-font-path}/fa-regular-400.ttf') format('truetype'),
-	url('#{$fa-font-path}/fa-regular-400.svg#fontawesome') format('svg');
-  }
-}
-}
-
      .dropdown .dropdown-options::after {
-     font-family: Font Awesome\ 5 Free';
+     font-family: Font Awesome
      content: "\f085";
      color: #999;
      font-size: 1.3em;
@@ -152,23 +138,27 @@ body {
      padding: .5em .3em .4em .8em;
      pointer-events: none;
      border-left: 1px solid #eee;
-     font-weight: 900;
 }
+
  label.field {
      font-weight: 900;
      display: block;
      margin-top: .75em;
 }
+
  form.submitted input:valid, form.submitted select:valid, form.submitted textarea:valid {
      border: 1px solid #ccc;
 }
+
  form.submitted input:invalid, form.submitted select:invalid, form.submitted textarea:invalid {
      border: 1px solid #f00;
      box-shadow: 0 0 0 2px #f00;
 }
+
  .checkboxes, .radio-buttons {
      margin: .5em 0 1.5em;
 }
+
  .checkboxes label, .radio-buttons label {
      margin-bottom: .5em;
      display: block;

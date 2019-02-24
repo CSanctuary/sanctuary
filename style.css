@@ -1,6 +1,6 @@
 body {
      font: 1rem/1.5rem 'Open Sans', sans-serif;
-     color: #333;
+     color: black;
      margin: 100;
      padding: 100;
 }
@@ -25,12 +25,15 @@ body {
      float: both;
      padding: 10px 0;
 }
+
  li a:hover:not(.active) {
      background-color: #b30000;
 }
+
  .active {
      background-color: #b30000;
 }
+
 ​ div {
      box-sizing: border-box;
 }
@@ -39,7 +42,7 @@ body {
      font-weight: 300;
      font-size: 2em;
      line-height: 1.3em;
-     color: #131313;
+     color: black;
      margin-bottom: 0;
 }
  h2 {
@@ -62,17 +65,21 @@ body {
      max-width: 100%;
      display: block;
 }
+
  #img-caption {
      padding: .5em 1em;
 }
+
  .inset img {
      width: 100%;
 }
+
  .content {
      padding: 0;
      margin: 0;
      background: #fff;
 }
+
  .text {
      padding: .5em 2em 1.5em;
      box-sizing: border-box;
@@ -167,7 +174,7 @@ body {
  button {
      font-size: 1em;
      text-transform: uppercase;
-     color: #fff;
+     color: white;
      background: #444;
      width: 100%;
      margin: .5em 0 1em;
@@ -191,7 +198,7 @@ body {
          background-repeat: no-repeat;
          top: 0px;
          left: 0px;
-         background-image: url('https://raw.githubusercontent.com/CSanctuary/sanctuary/master/img%7Cvid%7Cdoc/redtexture.jpg');
+         background-image: url('https://github.com/CSanctuary/sanctuary/blob/master/img%7Cvid%7Cdoc/temple.png');
          z-index: -1;
     }
      h1 {

@@ -126,8 +126,8 @@ body {
 }
 
      .dropdown .dropdown-options::after {
-     font-family: Font Awesome
-     content: "\f085";
+     content: '\f085';
+     font-family: 'Font Awesome 5 Free';
      color: #999;
      font-size: 1.3em;
      position: absolute;
@@ -135,6 +135,7 @@ body {
      right: .2em;
      display: block;
      background: white;
+     -webkit-font-smoothing: antialiased;
      padding: .5em .3em .4em .8em;
      pointer-events: none;
      border-left: 1px solid #eee;

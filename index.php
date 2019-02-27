@@ -179,6 +179,7 @@ if($_POST["message"]) {
                             <label id="comments-label" class="field" for="comments">Do you have any other comments?
         <textarea id="comments" name="comments" rows="6" placeholder="Thank you to sponsor and host for the amazing job and everything you do for the vape community!"></textarea>
              <input type="submit" name="submit">
+        </form>
       
     </div>
   </div>

@@ -1,42 +1,64 @@
 <?php
-if(isset($_POST["submit"])){
-// Checking For Blank Fields..
-if($_POST['vname']==""||$_POST['vemail']==""||$_POST['sub']==""||$_POST['msg']==""){
-$fill="Fill All Fields..";?>
-<script>alert("<?php echo "$fill";?>");</script>
-<?php
-}
-else
+if(!isset($_POST['submit']))
 {
-// Check if the "Sender's Email" input field is filled out
-$email=$_POST['vemail'];
-// Sanitize E-mail Address
-$email =filter_var($email, FILTER_SANITIZE_EMAIL);
-// Validate E-mail Address
-$email= filter_var($email, FILTER_VALIDATE_EMAIL);
-if (!$email){
-$invalid="Invalid Sender's Email";?>
-<script>alert("<?php echo "$invalid";?>");</script>
-<?php
+	//This page should not be accessed directly. Need to submit the form.
+	echo "error; you need to submit the form!";
 }
-// for sending mail remove comments lines from the below code and remember for sending mail you need to have run your program on live server
-else{
-//$subject = $_POST['sub'];
-//$message = $_POST['msg'];
-//$headers = 'From:'. $email2 . "\r\n"; // Sender's Email
-//$headers .= 'Cc:'. $email2 . "\r\n"; // Carbon copy to Sender
-// Message lines should not exceed 70 characters (PHP rule), so wrap it
-//$message = wordwrap($message, 70);
-// Send Mail By PHP Mail Function
-//mail("googol.msg@gmail.com", $subject, $message, $headers); // If you wish to send email then for that you need to have a live server
-$mailsent= "Your mail has been sent successfully ! Thank you for your feedback";
-?>
-<script>alert("<?php echo "$mailsent";?>");</script>
-<?php
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
+
+//Validate first
+if(empty($name)||empty($visitor_email)) 
+{
+    echo "Name and email are mandatory!";
+    exit;
 }
+
+if(IsInjected($visitor_email))
+{
+    echo "Bad email value!";
+    exit;
 }
+
+$email_from = 'googol.msg@gmail.com';//<== update the email address
+$email_subject = "New Form submission";
+$email_body = "You have received a new message from the user $name.\n".
+    "Here is the message:\n $message".
+    
+$to = "googol.msg@gmail.com";//<== update the email address
+$headers = "From: $email_from \r\n";
+$headers .= "Reply-To: $visitor_email \r\n";
+//Send the email!
+mail($to,$email_subject,$email_body,$headers);
+//done. redirect to thank-you page.
+header('Location: thank-you.html');
+
+
+// Function to validate against any email injection attempts
+function IsInjected($str)
+{
+  $injections = array('(\n+)',
+              '(\r+)',
+              '(\t+)',
+              '(%0A+)',
+              '(%0D+)',
+              '(%08+)',
+              '(%09+)'
+              );
+  $inject = join('|', $injections);
+  $inject = "/$inject/i";
+  if(preg_match($inject,$str))
+    {
+    return true;
+  }
+  else
+    {
+    return false;
+  }
 }
-?>
+   
+?> 
 
 <!DOCTYPE html
 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"

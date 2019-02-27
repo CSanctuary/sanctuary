@@ -24,7 +24,7 @@ function sendData(data) {
   });
 
   // Set up our request
-  XHR.open('POST', 'https://example.com/cors.php');
+  XHR.open('POST', 'http://sanctuarynetwork.online/submitinfo.php');
 
   // Add the required HTTP header for form data POST requests
   XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

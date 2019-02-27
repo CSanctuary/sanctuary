@@ -61,7 +61,7 @@ if($_POST["message"]) {
                             <h1 id="title">Winners Form</h1><br>
 
                             <p class="note">Items indicated by <span class="required">*</span> are required.</p><br>
-                            <form method="post" action="index.php">
+                            <form method="post" action="acknowledge.php">
 
                             <label id="name-label" class="field" for="name">What is your first and last name? <span class="required">*</span></label>
                             <input id="name" name="name" type="text" placeholder="The Sanctuary Network" required />
@@ -178,7 +178,7 @@ if($_POST["message"]) {
                             </div>
                             <label id="comments-label" class="field" for="comments">Do you have any other comments?
         <textarea id="comments" name="comments" rows="6" placeholder="Thank you to sponsor and host for the amazing job and everything you do for the vape community!"></textarea>
-             <input type="submit" value="send">
+             <input type="submit" name="send" value="send message">
         </form>
       
     </div>

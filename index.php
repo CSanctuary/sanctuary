@@ -61,7 +61,7 @@ if($_POST["message"]) {
                             <h1 id="title">Winners Form</h1><br>
 
                             <p class="note">Items indicated by <span class="required">*</span> are required.</p><br>
-                            
+                            <form method="post" action="index.php">
 
                             <label id="name-label" class="field" for="name">What is your first and last name? <span class="required">*</span></label>
                             <input id="name" name="name" type="text" placeholder="The Sanctuary Network" required />

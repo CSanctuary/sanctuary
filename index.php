@@ -18,12 +18,11 @@ if($_POST["message"]) {
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="style.css">
-<a href="https://github.com/CSanctuary/sanctuary/blob/master/submitinfo.php"></a>
 
 </head>
 
 <body>
-     <script type="text/javascript" src="script.js"></script>
+     
 
         <header>
             <div id="bg_top"></div>

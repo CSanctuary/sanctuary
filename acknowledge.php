@@ -5,8 +5,16 @@ if(!isset($_POST['submit']))
 	echo "error; you need to submit the form!";
 }
 $name = $_POST['name'];
+$name = $_POST['shipping'];
+$name = $_POST['birthdate'];
 $visitor_email = $_POST['email'];
-$message = $_POST['message'];
+$name = $_POST['phone-number'];
+$name = $_POST['username'];
+$name = $_POST['show-host'];
+$name = $_POST['other-prize'];
+$name = $_POST['eliquid-options'];
+$name = $_POST['shirt-size'];
+$name = $_POST['prize-pics'];
 
 //Validate first
 if(empty($name)||empty($visitor_email)) 
@@ -32,7 +40,7 @@ $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
-header('Location: thank-you.html');
+header('Location: acknowledge.php');
 
 
 // Function to validate against any email injection attempts

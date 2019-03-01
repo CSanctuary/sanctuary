@@ -9,7 +9,6 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<?php include(acknowledge.php); ?>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="/javascript.js"></script>
 
@@ -56,23 +55,21 @@
 
                             <p class="note">Items indicated by <span class="required">*</span> are required.</p><br>
                            
-                            <form action="<?= $_SERVER['PHP_SELF']; ?> id="form" method="post" name="form">
                             <form id="winners-form" class="survey" action="index.html" method="get">
 
                             <label id="name-label" class="field" for="name">What is your first and last name? <span class="required">*</span></label>
                             <input id="name" name="name" type="text" placeholder="The Sanctuary Network" required />
                             <label id="shipping-label" class="field" for="shipping">What is your shipping address? <span class="required">*</span></label>
-                            <input id="shipping" name="shipping" type="text" placeholder="300 River Bend Rd
-                            Great Falls, VA 22066" required />
+                            <input id="shipping" name="shipping" type="text" placeholder="300 River Bend Rd Great Falls, VA 22066" required />
                             <label id="birthdate-label" class="field" for="birthdate">What is your date of birth? <span class="required">*</span></label>
                             <input id="birthdate" name="birthdate" type="text" placeholder="01/06/1975" required />
-                            <label id="email" class="field" for="email">What is your email address? <span class="required">*</span></label>
+                            <label id="email-label" class="field" for="email">What is your email address? <span class="required">*</span></label>
                             <input id="email" name="email" type="text" placeholder="thesanctuarynetwork@gmail.com" required />
-                            <label id="phone-number" class="field" for="phone-number">What is your phone number? <span class="required">*</span></label>
-                            <input id="username" name="phone-number" type="text" placeholder="1-001-000-1111" required />
+                            <label id="phone-label" class="field" for="phone-number">What is your phone number? <span class="required">*</span></label>
+                            <input id="phone" name="phone" type="text" placeholder="1-001-000-1111" required />
 
-                            <label id="username" class="field" for="username">What is your iVlog username? <span class="required">*</span></label>
-                            <input id="username" name="username" type="text" placeholder="TheSanctuaryNetwork" required />
+                            <label id="userid-label" class="field" for="userid">What is your iVlog username? <span class="required">*</span></label>
+                            <input id="userid name="username" type="text" placeholder="TheSanctuaryNetwork" required />
 
                             <label id="dropdown-label" class="field" id="icon" for="dropdown">What show did you win from? <span class="required">*</span>
 
@@ -89,14 +86,13 @@
                                 </div>
                             </div>
 
-               <label id="show-host" class="field" for="showhost">If you chose "Other" specify what show?</label>
-                            <input id="show-host" name="show-host" type="text" placeholder="The Sanctuary Network" required /> 
-                            <form action="#" id="form" method="post" name="form">
+               <label id="host-label" class="field" for="host">If you chose "Other" specify what show?</label>
+                            <input id="host" name="host" type="text" placeholder="The Sanctuary Network" required /> 
                             <label id="dropdown-label" class="field" for="sponsor">What sponsor and prize did you win? <span class="required">*</span></label>
                             <div class="dropdown">
                                 <div class="dropdown-options">
                                     <select id="dropdown" name="sponsor" class="select-box" required>
-               <option value="sponsorprize">Select Option</option>
+              <option value="sponsorprize">Select Option</option>
               <option value="sponsorprize">Alice in Vapeland</option>
               <option value="sponsorprize">Alloy Blends</option>
               <option value="sponsorprize">Coils by Chopper (Coils 4 Pack)</option>
@@ -114,14 +110,14 @@
                                 </div>
                             </div>
 
-                            <label id="other-prize" class="field" for="other-prize">If you chose "Other", please speciefy?
-        <input id="other-prize" name="other-prize" type="text" placeholder="Other Prize" />
+                            <label id="other-label" class="field" for="other">If you chose "Other", please speciefy?
+        <input id="other" name="other" type="text" placeholder="Other Prize" />
 
-             <label id="eliquid-options" class="field" for="eliquid-options">Specify e-liquid win options.
-        <input id="eliquid-options" name="eliquid-options" type="text" placeholder="Sponsor | Flavor | 120 ML | 3 MG | Max VG" />
+             <label id="options-label" class="field" for="options">Specify e-liquid win options.
+        <input id="options" name="options" type="text" placeholder="Sponsor | Flavor | 120 ML | 3 MG | Max VG" />
 
-         <label id="shirt-size" class="field" for="shirt-size">Specify shirt size if applicable.
-        <input id="shirt-size" name="shirt-size" type="text" placeholder="Shirt Size" />
+         <label id="size-label" class="field" for="size">Specify shirt size if applicable.
+        <input id="size" name="size" type="text" placeholder="Shirt Size" />
 
 
 
@@ -141,7 +137,7 @@
                             <label id="dropdown-label" class="field" for="dropdown">Are you of age in your state or country to vape? <span class="required">*</span></label>
                             <div class="dropdown">
                                 <div class="dropdown-options">
-                                    <select id="dropdown" name="legal-illegal" class="select-box" required>
+                                    <select id="dropdown" name="legal" class="select-box" required>
                <option value="">Select Option</option>
                <option value="legal">Yes</option>
                <option value="illegal">No</option>
@@ -151,20 +147,20 @@
                             <label id="dropdown-label" class="field" for="dropdown">Can you post pics of prize in group? <span class="required">*</span></label>
                             <div class="dropdown">
                                 <div class="dropdown-options">
-                                    <select id="dropdown" name="prize-pics" class="select-box" required>
+                                    <select id="dropdown" name="pics" class="select-box" required>
                <option value="">Select Option</option>
-               <option value="prize-pics">Yes</option>
-               <option value="prize-pics">No</option>
-               <option value="prize-pics">Other</option>
+               <option value="pics">Yes</option>
+               <option value="pics">No</option>
+               <option value="pics">Other</option>
             </select>
 
-                                    <label id="prize-pics" class="field" for="prize-pics">If you chose "Other" where will you be posting your win? </label>
-                                    <input id="prize-pics" name="prize-pics" type="text" placeholder="Socialmedia" required />
+                                    <label id="pics-label" class="field" for="pics">If you chose "Other" where will you be posting your win? </label>
+                                    <input id="pics" name="pics" type="text" placeholder="Socialmedia" required />
                                 </div>
                             </div>
                             <label id="dropdown-label" class="field" for="dropdown">You understand by not selecting "Yes" your win will be voided?<span class="required">*</span></label>
                             <div class="dropdown">
-                                <div class="dropdown-options">
+                                <div class="options">
                                     <select id="dropdown" name="agreement" class="select-box" required>
               <option value="agreement">Select Option</option>
               <option value="agreement">Yes</option>
@@ -175,9 +171,7 @@
                             <label id="comments-label" class="field" for="comments">Do you have any other comments?
         <textarea id="comments" name="comments" rows="6" placeholder="Thank you to sponsor and host for the amazing job and everything you do for the vape community!"></textarea>
  <button id="submit" type="submit">Submit</button>
-<input id="send" name="submit" type="text" value="Send Feedback">
         </form>
-      <h3><?php include "acknowledge.php"?></h3>
     </div>
   </div>
 

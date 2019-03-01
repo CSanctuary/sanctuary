@@ -106,7 +106,7 @@ body {
  input, select, textarea {
      box-sizing: padding-box;
 }
- textarea, input[type="text"], input[type="email"], input[type="number"] {
+ textarea, input[type="name"], input[type="shipping"], input[type="birthdate"], input[type="email"], input[type="phone-number"],input[type="email"], input[type="username"], input[type="show-host"], input[type="other-prize"], input[type="eliquid-options"], input[type="shirt-size"]input[type="prize-pics"], {
      color: black;
      font-size: 1em;
      line-height: 1.5em;

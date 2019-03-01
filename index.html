@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <?php include(acknowledge.php); ?>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="/javascript.js"></script>
 
 </head>
 
@@ -56,6 +57,7 @@
                             <p class="note">Items indicated by <span class="required">*</span> are required.</p><br>
                            
                             <form action="<?= $_SERVER['PHP_SELF']; ?> id="form" method="post" name="form">
+                            <form id="Winners Form" class="survey" action="index.html" method="get">
 
                             <label id="name-label" class="field" for="name">What is your first and last name? <span class="required">*</span></label>
                             <input id="name" name="name" type="text" placeholder="The Sanctuary Network" required />
@@ -172,7 +174,8 @@
                             </div>
                             <label id="comments-label" class="field" for="comments">Do you have any other comments?
         <textarea id="comments" name="comments" rows="6" placeholder="Thank you to sponsor and host for the amazing job and everything you do for the vape community!"></textarea>
-             <input id="send" name="submit" type="text" value="Send Feedback">
+ <button id="submit" type="submit">Submit</button>
+<input id="send" name="submit" type="text" value="Send Feedback">
         </form>
       <h3><?php include "acknowledge.php"?></h3>
     </div>
